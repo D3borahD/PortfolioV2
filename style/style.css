@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'brushstroke_plainplain';
+  src: url("/font/BRUSHSTP-webfont.eot");
+  src: url("/font/BRUSHSTP-webfont.eot?#iefix") format("embedded-opentype"), url("/font/BRUSHSTP-webfont.woff2") format("woff2"), url("/font/BRUSHSTP-webfont.woff") format("woff"), url("/font/BRUSHSTP-webfont.ttf") format("truetype"), url("/font/BRUSHSTP-webfont.svg#brushstroke_plainplain") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+header {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.identite {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.identite > .name {
+  font-size: 2rem;
+}
+
+.identite > .profession {
+  color: #139ed4;
+}
+
+.navbar {
+  margin-top: 1rem;
+}
+
+.navbar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.navbar > ul a {
+  text-decoration: none;
+}
+
+.navbar > ul a:visited {
+  color: #979797;
+}
+
+.navbar > ul a:hover {
+  color: white;
+}
+
+.navbar > ul > li {
+  margin-right: 1rem;
+}
+
+.navbar a {
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.navbar a:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  background-color: #7122e4;
+}
+
+/* mode responsive
+
+.menu {
+    background-color: $purple;
+    color: $font;
+    width: 5rem;
+    display: flex;
+    >img {
+        height: 30px;
+        margin: auto;
+    }
+}
+*/
+.baniere {
+  background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));
+  background: linear-gradient(to left, #139ed4, #7122e4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15rem;
+}
+
+.baniere > .portfolio {
+  font-size: 5em;
+  font-family: 'brushstroke_plainplain', Helvetica, sans-serif;
+  position: absolute;
+  z-index: 2;
+}
+
+.baniere > .photoid img {
+  height: 200px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
+          mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+  margin-left: 25rem;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */

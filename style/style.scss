@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'brushstroke_plainplain';
+    src: url('/font/BRUSHSTP-webfont.eot');
+    src: url('/font/BRUSHSTP-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/BRUSHSTP-webfont.woff2') format('woff2'),
+         url('/font/BRUSHSTP-webfont.woff') format('woff'),
+         url('/font/BRUSHSTP-webfont.ttf') format('truetype'),
+         url('/font/BRUSHSTP-webfont.svg#brushstroke_plainplain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font: white;
+$purple: #7122e4;
+$blue: #139ed4;
+$gradiant1: linear-gradient(to right, $blue, $purple);
+$gradiant2: linear-gradient(to left, $blue, $purple);
+$background-color-body:#1b1b1b;
+
+body {
+    background-color: $background-color-body;
+    color: $font;
+}
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.identite {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    >.name {
+        font-size: 2rem;
+    }
+    >.profession {
+        color: $blue;
+    }
+}
+
+.navbar {
+    margin-top: 1rem;
+    >ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: #979797;
+        }
+        a:hover {
+            color: $font;   
+        }
+        >li {
+            margin-right: 1rem;
+    }
+    }
+}
+
+.navbar a {
+   transition: 450ms;
+    &:hover {
+        transform: scale(1.13);
+        background-color: $purple;
+    }
+}
+
+/* mode responsive
+
+.menu {
+    background-color: $purple;
+    color: $font;
+    width: 5rem;
+    display: flex;
+    >img {
+        height: 30px;
+        margin: auto;
+    }
+}
+*/
+
+.baniere {
+    background: $gradiant2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    >.portfolio {
+        font-size: 5em;
+        font-family: 'brushstroke_plainplain', Helvetica, sans-serif;
+        position: absolute;
+        z-index: 2;
+    }
+    >.photoid img {
+        height: 200px;
+        mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+        margin-left: 25rem ;
+        z-index: 1; 
+    }
+}
