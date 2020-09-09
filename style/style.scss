@@ -64,9 +64,8 @@ header {
 }
 
 .navbar a {
-   transition: 450ms;
-    &:hover {
-        transform: scale(1.13);
+    transition: 450ms;
+    &:hover{
         background-color: $purple;
     }
 }

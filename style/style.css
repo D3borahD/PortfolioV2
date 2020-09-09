@@ -78,8 +78,6 @@ header {
 }
 
 .navbar a:hover {
-  -webkit-transform: scale(1.13);
-          transform: scale(1.13);
   background-color: #7122e4;
 }
 
