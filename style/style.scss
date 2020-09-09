@@ -21,6 +21,15 @@ body {
     background-color: $background-color-body;
     color: $font;
 }
+h1 {
+    font-family: brushstroke_plainplain;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+P{
+    line-height: 1.3rem;
+}
 
 header {
     background-color: #000000;
@@ -55,20 +64,23 @@ header {
             color: #979797;
         }
         a:hover {
-            color: $font;   
-        }
+            color: $font; 
+            }
         >li {
-            margin-right: 1rem;
-    }
+            margin-right: 1rem;     
+        }
     }
 }
 
-.navbar a {
-    transition: 450ms;
-    &:hover{
+.navbar a { 
+    background-color: #000000;
+    transform: scaleY(1);
+    transition: transform 450ms, background-color 300ms 100mx;
+    &:hover {
+        transform: translateY(25%);
         background-color: $purple;
+        }
     }
-}
 
 /* mode responsive
 
@@ -102,4 +114,59 @@ header {
         margin-left: 25rem ;
         z-index: 1; 
     }
+}
+/*About Me*/
+
+.aboutme {
+    margin: 5rem 0 0 5rem;
+    text-align: justify;
+    >p {
+        width: 40rem;
+    }
+}
+
+.separator{
+    height: 1rem;
+    width: 5rem;
+    margin-bottom: 3rem;
+    background: $gradiant1;
+}
+
+.cv {
+    margin: 5rem 5rem 0 0 ;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
+
+.formation, .experience {
+    >.separator {
+        height: .5rem;
+        width: 100%;
+    }
+}
+
+.diplome {
+    height: 5rem;
+
+}
+
+h2 {
+    font-family: brushstroke_plainplain;
+}
+.annees {
+    width: 10rem;
+    margin: auto;
+}
+
+.date {
+    font-size: 5rem;
+    background: $gradiant2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.parcours ul {
+    list-style-type: none;
+    text-align: left;
 }

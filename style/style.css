@@ -11,6 +11,16 @@ body {
   color: white;
 }
 
+h1 {
+  font-family: brushstroke_plainplain;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+P {
+  line-height: 1.3rem;
+}
+
 header {
   background-color: #000000;
   display: -webkit-box;
@@ -73,11 +83,18 @@ header {
 }
 
 .navbar a {
-  -webkit-transition: 450ms;
-  transition: 450ms;
+  background-color: #000000;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: background-color 300ms 100mx, -webkit-transform 450ms;
+  transition: background-color 300ms 100mx, -webkit-transform 450ms;
+  transition: transform 450ms, background-color 300ms 100mx;
+  transition: transform 450ms, background-color 300ms 100mx, -webkit-transform 450ms;
 }
 
 .navbar a:hover {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
   background-color: #7122e4;
 }
 
@@ -124,5 +141,63 @@ header {
           mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
   margin-left: 25rem;
   z-index: 1;
+}
+
+/*About Me*/
+.aboutme {
+  margin: 5rem 0 0 5rem;
+  text-align: justify;
+}
+
+.aboutme > p {
+  width: 40rem;
+}
+
+.separator {
+  height: 1rem;
+  width: 5rem;
+  margin-bottom: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#139ed4), to(#7122e4));
+  background: linear-gradient(to right, #139ed4, #7122e4);
+}
+
+.cv {
+  margin: 5rem 5rem 0 0;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.formation > .separator, .experience > .separator {
+  height: .5rem;
+  width: 100%;
+}
+
+.diplome {
+  height: 5rem;
+}
+
+h2 {
+  font-family: brushstroke_plainplain;
+}
+
+.annees {
+  width: 10rem;
+  margin: auto;
+}
+
+.date {
+  font-size: 5rem;
+  background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));
+  background: linear-gradient(to left, #139ed4, #7122e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.parcours ul {
+  list-style-type: none;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
