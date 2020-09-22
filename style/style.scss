@@ -2,7 +2,6 @@
     font-family: 'brushstroke_plainplain';
     src: url('/font/BRUSHSTP-webfont.eot');
     src: url('/font/BRUSHSTP-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/font/BRUSHSTP-webfont.woff2') format('woff2'),
          url('/font/BRUSHSTP-webfont.woff') format('woff'),
          url('/font/BRUSHSTP-webfont.ttf') format('truetype'),
          url('/font/BRUSHSTP-webfont.svg#brushstroke_plainplain') format('svg');
@@ -17,6 +16,10 @@ $gradiant1: linear-gradient(to right, $blue, $purple);
 $gradiant2: linear-gradient(to left, $blue, $purple);
 $background-color-body:#1b1b1b;
 
+* {
+    margin: 0;
+}
+
 body {
     background-color: $background-color-body;
     color: $font;
@@ -26,8 +29,11 @@ h1 {
     text-transform: uppercase;
     font-size: 2rem;
 }
+h2 {
+    font-family: brushstroke_plainplain;
+}
 
-P{
+P {
     line-height: 1.3rem;
 }
 
@@ -50,7 +56,7 @@ header {
 }
 
 .navbar {
-    margin-top: 1rem;
+    margin-top: 2.5%;
     >ul {
     display: flex;
     flex-direction: row;
@@ -132,33 +138,51 @@ header {
     background: $gradiant1;
 }
 
+/*CV Bloc*/
+
 .cv {
     margin: 5rem 5rem 0 0 ;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3,1fr); 
+    grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
 }
 
-.formation, .experience {
+.formation, .experience { 
     >.separator {
         height: .5rem;
         width: 100%;
     }
 }
 
-.diplome {
-    height: 5rem;
+/*column 1*/
+
+.diplome, .parcours {
+    background-color: #2c2b2b;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
 }
 
-h2 {
-    font-family: brushstroke_plainplain;
+/*column 2*/
+
+.link {
+    height: 0.3rem;
+    width: 100%;
+    background-color: #2c2b2b;
+        margin-top: 7rem;
 }
+
+/*column 3*/
+
 .annees {
     width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
+}
+.date-1 {
+    margin-top: 4rem;
 }
 
 .date {
@@ -168,10 +192,19 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
+/*column 4*/
+
+.datechemin {
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-left: 50%;
+    margin-top: 0.5rem;
+    background: $gradiant2;
+}
+
+/*column 5*/
+
 .parcours {
-    background-color: #2c2b2b;
-    margin: 1rem;
-    padding: 1rem;
     >ul {
         list-style-type: none;
         text-align: left;
@@ -180,4 +213,6 @@ h2 {
 
 .logo {
     height: 3rem;
+    border-radius: 5px;
 }
+
