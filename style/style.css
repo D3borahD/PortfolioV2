@@ -9,6 +9,7 @@ body {
   background-color: #1b1b1b;
   color: white;
   font-family: "Nunito", sans-serif;
+  width: 100%;
 }
 
 header {
@@ -24,6 +25,7 @@ header {
           justify-content: space-between;
   text-transform: uppercase;
   height: 110px;
+  width: 100%;
 }
 
 .identite,
