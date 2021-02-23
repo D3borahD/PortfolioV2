@@ -12,6 +12,11 @@ $background-color-blocs: #2c2b2b;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +24,7 @@ body {
   color: $font;
   font-family: "Nunito", sans-serif;
   width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -65,7 +71,7 @@ header {
   z-index: 2;
 }
 
-.navbar:hover {
+.navbar.visible {
   cursor: pointer;
   ul {
     visibility: visible;
@@ -109,6 +115,34 @@ header {
   width: 5rem;
   margin-bottom: 3rem;
   background: $gradiant1;
+}
+
+// Bouton return TOP
+.container {
+  position: relative;
+}
+#returnTop {
+  position: relative;
+  font-size: 1em;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 125px;
+  left: -15px;
+  cursor: pointer;
+  background: $gradiant2;
+  opacity: 0.7;
+  border-radius: 50%;
+  transition: all 0.5s ease-out;
+  > i {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+  }
+}
+
+h2::first-letter {
+  color: $blue;
 }
 
 /*CV Bloc
