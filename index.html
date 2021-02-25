@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <div class="container">
+    
     <header>
-      <div class="identite">
+      <div class="identite" id="identite">
         <h2>Deborah Douillet</h2>
         <h3>Développeuse Informatique</h3>
       </div>
@@ -24,12 +24,12 @@
       <div class="navbar">
         <i class="fas fa-bars"></i>
         <ul>
-          <li><a href="#">A propos de moi</a></li>
-          <li><a href="#">Compétences</a></li>
-          <li><a href="#">Mon travail</a></li>
+          <li><a href="#aboutme">A propos de moi</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#softSkills">Soft skills</a></li>
+          <!-- <li><a href="#">Mon travail</a></li>
           <li><a href="#">Mes loisirs</a></li>
-          <li><a href="#">Soft skills</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact</a></li> -->
         </ul>
       </div>
     </header>
@@ -40,7 +40,7 @@
     </div>
 
    
-    <div class="aboutme">
+    <section id="aboutme">
         <h2>A propos de moi</h2>
         <div class="separator"></div>
         <p>
@@ -51,8 +51,34 @@
             Enfin je pourrais m'imprégner de la culture de l'entreprise dans l'objectif de poursuivre notre collaboration à la suite de ma formation.
         </p>
     
-
-
+      </section> 
+      <section id="competences">
+        <h2>Compétences</h2>
+        <div class="separator"></div>
+        <ul>
+      
+          <li><i class="fab fa-html5 fa-2x"></i></li>
+          <li><i class="fab fa-css3-alt fa-2x"></i></li>
+          <li><i class="fab fa-sass fa-2x"></i></li> 
+          <li><i class="fab fa-js fa-2x"></i></li>
+          <li><i class="fab fa-git fa-2x"></i></li>
+          <li><i class="fab fa-github fa-2x"></i></li>
+          <li><i class="fab fa-php fa-2x"></i></li>
+          <li class="mySQL">MySQL</li>
+        </ul>
+      </section> 
+      <section id="softSkills">
+        <h2>Soft skills</h2>
+        <div class="separator"></div>
+        <ul>
+      <li class="softSkills">Autonome</li>
+      <li class="softSkills">Sens du travail d'équipe</li>
+      <li class="softSkills">Créative</li>
+      <li class="softSkills">Autodidacte</li>
+      <li class="softSkills">Force de propositions</li>
+      <li class="softSkills">Curieuse</li>
+        </ul>
+      </section> 
        <!--
         <div class="cv">
             <div class="formation">
@@ -171,9 +197,11 @@
     <div class="competences">
         <h1>Compétences</h1>
             <div class="separator"></div>-->
-    </div> 
+    
+
     <div id="returnTop">
-    <i class="far fa-arrow-alt-circle-up fa-1.5x" i></i>
+    
+    <a href="#identite"><i class="far fa-arrow-alt-circle-up fa-1.5x" i></i></a>
    </div>
 </div>
     <!-- retourner en haut de la page -->

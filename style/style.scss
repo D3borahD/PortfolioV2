@@ -13,9 +13,6 @@ $background-color-blocs: #2c2b2b;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -51,13 +48,14 @@ header {
   position: relative;
   width: 3rem;
   height: 3rem;
-  > i {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    font-size: 2.5rem;
-  }
+  transition: 0.3s;
+}
+.navbar i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
 }
 .navbar ul {
   visibility: hidden;
@@ -69,6 +67,7 @@ header {
   background: $background-color-blocs;
   list-style: none;
   z-index: 2;
+  transition: 0.3s;
 }
 
 .navbar.visible {
@@ -105,7 +104,7 @@ header {
   }
 }
 /*About Me */
-.aboutme {
+section {
   margin: 10%;
   text-align: center;
 }
@@ -134,7 +133,8 @@ header {
   opacity: 0.7;
   border-radius: 50%;
   transition: all 0.5s ease-out;
-  > i {
+  > a i {
+    color: #fff;
     position: absolute;
     left: 40%;
     top: 35%;
@@ -143,6 +143,44 @@ header {
 
 h2::first-letter {
   color: $blue;
+}
+
+// COMPETENCES
+#competences ul {
+  justify-content: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-template-rows: 50px 50px;
+  li .fa-html5 {
+    color: orangered;
+  }
+  li .fa-css3-alt {
+    color: $blue;
+  }
+  li .fa-sass {
+    color: plum;
+  }
+  li .fa-js {
+    color: yellow;
+  }
+  li .fa-git {
+    color: brown;
+  }
+  li .fa-github {
+    color: white;
+  }
+  li .fa-php {
+    color: $purple;
+  }
+  li.mySQL {
+    color: $blue;
+  }
+}
+
+// SOFT SKILL
+#softSkills ul {
+  list-style: none;
 }
 
 /*CV Bloc
