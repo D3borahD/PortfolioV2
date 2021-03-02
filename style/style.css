@@ -258,6 +258,44 @@ h2::first-letter {
   list-style: none;
 }
 
+#sources ul {
+  list-style: none;
+}
+
+#sources ul li {
+  margin-top: 5px;
+}
+
+#sources ul :nth-child(1) span {
+  width: 26%;
+}
+
+#sources ul :nth-child(2) span {
+  width: 80%;
+}
+
+#sources ul :nth-child(3) span {
+  width: 83%;
+}
+
+#sources ul :nth-child(4) span {
+  width: 94%;
+}
+
+#sources ul :nth-child(5) span {
+  width: 53%;
+}
+
+#sources ul span {
+  background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));
+  background: linear-gradient(to left, #139ed4, #7122e4);
+  border-radius: 25px;
+  display: block;
+  height: 10px;
+  margin: 10px;
+  text-align: right;
+}
+
 /*CV Bloc
 
 .cv {

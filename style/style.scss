@@ -83,6 +83,7 @@ header {
 }
 .navbar ul li a:hover {
   background: $gradiant2;
+
   padding: 0 20px;
 }
 
@@ -222,6 +223,54 @@ h2::first-letter {
 #softSkills ul {
   list-style: none;
 }
+
+// SOURCES
+
+#sources ul {
+  //width: 510px;
+  list-style: none;
+  li {
+    margin-top: 5px;
+  }
+  :nth-child(1) {
+    span {
+      width: 26%;
+    }
+  }
+  :nth-child(2) {
+    span {
+      width: 80%;
+    }
+  }
+  :nth-child(3) {
+    span {
+      width: 83%;
+    }
+  }
+  :nth-child(4) {
+    span {
+      width: 94%;
+    }
+  }
+  :nth-child(5) {
+    span {
+      width: 53%;
+    }
+  }
+  span {
+    background: $gradiant2;
+    border-radius: 25px;
+    display: block;
+    height: 10px;
+    margin: 10px;
+    text-align: right;
+  }
+}
+// #sources li {
+//   width: 100%;
+//   border-radius: 25px;
+
+// }
 
 /*CV Bloc
 
