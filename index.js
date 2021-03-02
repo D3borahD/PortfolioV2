@@ -10,9 +10,11 @@ navbar.addEventListener('click', ()=> {
 window.addEventListener('scroll', function(){
     const scroll = this.document.documentElement.scrollTop;
 
-    if (scroll < 25){
+    if (scroll < 50){
         returnTop.style.opacity = '0';
     }else {
         returnTop.style.opacity = '1';
     }
 })
+
+//boutton de retour en haut de page mode PC

@@ -145,12 +145,19 @@ section {
     width: 400px;
     text-align: justify;
   }
+  .container {
+    display: flex;
+    justify-content: center;
+
+    li:hover {
+      transition: 1s;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 // Bouton return TOP
-.container {
-  position: relative;
-}
+
 #returnTop {
   position: relative;
   font-size: 1em;
