@@ -122,7 +122,7 @@ section {
   background: $gradiant1;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 380px) {
   .baniere {
     h1 {
       margin-left: 20%;
@@ -336,3 +336,32 @@ h2::first-letter {
   border-radius: 5px;
 }
 */
+
+//FOOTER
+footer {
+  background: $gradiant2;
+  padding: 5px 0 0 20px;
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      margin-left: 10px;
+      height: 30px;
+      width: 30px;
+      i {
+        color: white;
+        transform: translate(42%, 42%);
+      }
+    }
+  }
+
+  ul Li:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background: $blue;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 12px;
+  }
+}
