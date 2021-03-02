@@ -13,6 +13,6 @@ window.addEventListener('scroll', function(){
     if (scroll < 25){
         returnTop.style.opacity = '0';
     }else {
-        returnTop.style.opacity = '0.7';
+        returnTop.style.opacity = '1';
     }
 })
