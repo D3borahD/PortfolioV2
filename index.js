@@ -1,5 +1,6 @@
 const navbar = document.querySelector('.navbar');
 const returnTop = document.getElementById('returnTop');
+const openClassrooms = document.querySelector('.openclassrooms');
 
 //Apparition de la NavBar format Mobile
 navbar.addEventListener('click', ()=> {
@@ -17,5 +18,10 @@ window.addEventListener('scroll', function(){
     }
 })
 
+//Apparition des Cours Openclassrooms
+openClassrooms.addEventListener('click', (event)=> {
+    openClassrooms.classList.toggle('apprentissage');
+   event.preventDefault();
+})
 
-//boutton de retour en haut de page mode PC
+

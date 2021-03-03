@@ -50,6 +50,7 @@ header {
   height: 3rem;
   transition: all 0.5s;
 }
+
 .navbar i {
   position: absolute;
   top: 50%;
@@ -83,7 +84,6 @@ header {
 }
 .navbar ul li a:hover {
   background: $gradiant2;
-
   padding: 0 20px;
 }
 
@@ -166,7 +166,7 @@ section {
   width: 40px;
   position: fixed;
   bottom: 125px;
-  left: -15px;
+  right: -15px;
   cursor: pointer;
   background: $gradiant2;
   border-radius: 50%;
@@ -174,7 +174,7 @@ section {
   > a i {
     color: #fff;
     position: absolute;
-    left: 40%;
+    right: 40%;
     top: 35%;
   }
 }
@@ -225,34 +225,102 @@ h2::first-letter {
 }
 
 // SOURCES
+.openclassrooms {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    background: $gradiant1;
+    z-index: 10;
+  }
+  h3 {
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(50%);
 
-#sources ul {
+    &::before {
+      content: "15";
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      border: 1px solid red;
+      background: red;
+      border-radius: 50%;
+      top: -30px;
+      right: -5px;
+    }
+    &::after {
+      content: "cours suivi";
+      position: absolute;
+      top: -30px;
+      right: -100px;
+    }
+  }
+  ul {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 100px;
+    visibility: hidden;
+    // &::before {
+    //   content: "\f338";
+    //   font-family: "Font Awesome 5 Free";
+    //   font-weight: 400;
+    //   color: white;
+    //   position: absolute;
+    //   height: 25px;
+    //   width: 25px;
+    //   background: red;
+    //   border-radius: 50%;
+    //   top: -30px;
+    //   right: -5px;
+    // }
+  }
+}
+
+.apprentissage {
+  overflow: scroll;
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+  ul {
+    visibility: visible;
+  }
+  &:hover {
+    background: $background-color-body;
+  }
+}
+
+.openclassrooms ul {
   //width: 510px;
   list-style: none;
   li {
     margin-top: 5px;
   }
-  :nth-child(1) {
+  :nth-child(15) {
     span {
       width: 26%;
     }
   }
-  :nth-child(2) {
+  :nth-child(14) {
     span {
       width: 80%;
     }
   }
-  :nth-child(3) {
+  :nth-child(13) {
     span {
       width: 83%;
     }
   }
-  :nth-child(4) {
+  :nth-child(12) {
     span {
       width: 94%;
     }
   }
-  :nth-child(5) {
+  :nth-child(11) {
     span {
       width: 53%;
     }
@@ -266,6 +334,22 @@ h2::first-letter {
     text-align: right;
   }
 }
+
+.live {
+  span {
+    height: 15px;
+    width: 15px;
+    background: red;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    :visited {
+      color: white;
+    }
+  }
+}
+
 // #sources li {
 //   width: 100%;
 //   border-radius: 25px;
@@ -386,6 +470,9 @@ h2::first-letter {
 }
 */
 
+// /!\ régler le footer pour qu'il soit toujours en bas de page
+// => problème créé avec le bloc .openclassrooms
+
 //FOOTER
 footer {
   background: $gradiant2;
@@ -403,7 +490,6 @@ footer {
       }
     }
   }
-
   ul Li:hover {
     cursor: pointer;
     transition: 0.5s;
