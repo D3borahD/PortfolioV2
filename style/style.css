@@ -487,6 +487,7 @@ footer {
   background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));
   background: linear-gradient(to left, #139ed4, #7122e4);
   padding: 5px 0 0 20px;
+  text-align: center;
 }
 
 footer ul {
@@ -494,29 +495,36 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
 }
 
 footer ul li {
   margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
   height: 30px;
   width: 30px;
+  text-align: center;
 }
 
-footer ul li i {
-  color: white;
-  -webkit-transform: translate(42%, 42%);
-          transform: translate(42%, 42%);
-}
-
-footer ul Li:hover {
+footer ul li:hover {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #139ed4;
-  border-radius: 50%;
+}
+
+footer ul li i {
+  color: white;
+  -webkit-transform: translate(5%, 30%);
+          transform: translate(5%, 30%);
 }
 
 footer p {
   font-size: 12px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

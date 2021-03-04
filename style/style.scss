@@ -473,30 +473,38 @@ h2::first-letter {
 // /!\ régler le footer pour qu'il soit toujours en bas de page
 // => problème créé avec le bloc .openclassrooms
 
-//FOOTER
+//**************FOOTER*************
 footer {
   background: $gradiant2;
   padding: 5px 0 0 20px;
+  text-align: center;
+
   ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    margin: 15px 0;
     li {
       margin-left: 10px;
+      border: 1px solid white;
+      border-radius: 50%;
       height: 30px;
       width: 30px;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        background: $blue;
+      }
       i {
         color: white;
-        transform: translate(42%, 42%);
+        transform: translate(5%, 30%);
       }
     }
   }
-  ul Li:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    background: $blue;
-    border-radius: 50%;
-  }
+
   p {
     font-size: 12px;
+    color: white;
   }
 }
