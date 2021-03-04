@@ -4,7 +4,7 @@ const returnTop = document.getElementById('returnTop');
 const openClassrooms = document.querySelector('.openclassrooms');
 
 
-
+// Action à paramétrer 
 mobileMode.addEventListener('change', () => {
     document.body.classList.toggle('mobile');
 })
@@ -31,7 +31,6 @@ openClassrooms.addEventListener('click', (event)=> {
     openClassrooms.classList.toggle('apprentissage');
    event.preventDefault();
 })
-
 
 
 

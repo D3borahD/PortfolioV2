@@ -144,7 +144,6 @@ header {
           transform: translateX(29px);
 }
 
-/*CLASS MOBILE MODE */
 /* BANNIERE*/
 .baniere {
   position: relative;
@@ -198,7 +197,7 @@ section {
   width: 40px;
   position: fixed;
   bottom: 125px;
-  right: -15px;
+  left: -15px;
   cursor: pointer;
   background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));
   background: linear-gradient(to left, #139ed4, #7122e4);
@@ -210,7 +209,7 @@ section {
 #returnTop > a i {
   color: #fff;
   position: absolute;
-  right: 40%;
+  left: 40%;
   top: 35%;
 }
 
