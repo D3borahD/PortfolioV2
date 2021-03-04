@@ -1,0 +1,37 @@
+@media screen and (min-width: 380px) {
+  .baniere h1 {
+    margin-left: 20%;
+    font-size: 5rem;
+  }
+  .photoid img {
+    margin-right: 35%;
+  }
+  .separator {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 8rem;
+    margin-top: 5px;
+  }
+  section p {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 400px;
+    text-align: justify;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container li:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=mobilestyle.css.map */

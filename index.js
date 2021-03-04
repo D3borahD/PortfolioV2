@@ -1,6 +1,14 @@
+const mobileMode = document.getElementById('mobile-mode');
 const navbar = document.querySelector('.navbar');
 const returnTop = document.getElementById('returnTop');
 const openClassrooms = document.querySelector('.openclassrooms');
+
+
+
+mobileMode.addEventListener('change', () => {
+    document.body.classList.toggle('mobile');
+})
+
 
 //Apparition de la NavBar format Mobile
 navbar.addEventListener('click', ()=> {
@@ -23,5 +31,10 @@ openClassrooms.addEventListener('click', (event)=> {
     openClassrooms.classList.toggle('apprentissage');
    event.preventDefault();
 })
+
+
+
+
+
 
 
