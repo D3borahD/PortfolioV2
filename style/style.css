@@ -16,6 +16,14 @@ body {
   height: 100vh;
 }
 
+h2::first-letter {
+  color: #139ed4;
+}
+
+ul {
+  list-style: none;
+}
+
 header {
   background-color: #000000;
   display: -webkit-box;
@@ -67,7 +75,6 @@ header {
   right: 0;
   top: 4rem;
   background: #2c2b2b;
-  list-style: none;
   z-index: 2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -230,21 +237,16 @@ section {
   background: linear-gradient(to right, #139ed4, #7122e4);
 }
 
-h2::first-letter {
-  color: #139ed4;
-}
-
 #competences ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (70px)[3];
-      grid-template-columns: repeat(3, 70px);
-  -ms-grid-rows: 50px 50px;
-      grid-template-rows: 50px 50px;
+  -ms-grid-columns: (5rem)[3];
+      grid-template-columns: repeat(3, 5rem);
+  -ms-grid-rows: 5rem 5rem;
+      grid-template-rows: 5rem 5rem;
 }
 
 #competences ul li .fa-html5 {
@@ -277,10 +279,6 @@ h2::first-letter {
 
 #competences ul li.mySQL {
   color: #139ed4;
-}
-
-#softSkills ul {
-  list-style: none;
 }
 
 .openclassrooms {
@@ -345,10 +343,6 @@ h2::first-letter {
 
 .apprentissage:hover {
   background: #1b1b1b;
-}
-
-.openclassrooms ul {
-  list-style: none;
 }
 
 .openclassrooms ul li {
@@ -516,7 +510,6 @@ footer {
 }
 
 footer ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
