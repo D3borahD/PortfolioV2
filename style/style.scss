@@ -83,9 +83,7 @@ header {
   header {
     background-color: white;
   }
-  .navbar ul li a {
-    color: black;
-  }
+
   .bulle,
   .training {
     border: 1px solid $blue;
@@ -329,41 +327,44 @@ section {
 // live code
 .live {
   margin-top: 40px;
-  position: relative;
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+
   h3 {
-    position: absolute;
+    position: relative;
     font-size: 1.1em;
     top: 20%;
+    &::before {
+      content: "+20";
+      font-size: 0.7em;
+      position: absolute;
+      height: 22px;
+      width: 22px;
+      background: $blue;
+      border-radius: 50%;
+      top: -25px;
+      left: 50px;
+      z-index: 10;
+    }
+    &::after {
+      content: "lives code étudiés";
+      z-index: 10;
+      width: 100%;
+      position: absolute;
+      top: -25px;
+      left: 75px;
+      font-size: 0.7em;
+    }
   }
-  &::before {
-    content: "+20";
-    font-size: 0.7em;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background: $blue;
-    border-radius: 50%;
-    top: -10px;
-    left: 50px;
-    z-index: 10;
-  }
-  &::after {
-    content: "lives code étudiés";
-    position: absolute;
-    top: -10px;
-    left: 75px;
-    font-size: 0.7em;
-  }
+
   a {
     cursor: pointer;
+    margin-top: 50px;
     color: white;
     display: block;
     font-size: 0.7em;
-    padding: 5px;
-    width: 50%;
+    padding: 8px;
+    width: 120px;
     height: 45px;
     border-radius: 25px;
     background: $gradiant2;

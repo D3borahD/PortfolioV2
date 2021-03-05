@@ -102,10 +102,6 @@ header {
   background-color: white;
 }
 
-.light .navbar ul li a {
-  color: black;
-}
-
 .light .bulle,
 .light .training {
   border: 1px solid #139ed4;
@@ -386,51 +382,50 @@ section {
 
 .live {
   margin-top: 40px;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .live h3 {
-  position: absolute;
+  position: relative;
   font-size: 1.1em;
   top: 20%;
 }
 
-.live::before {
+.live h3::before {
   content: "+20";
   font-size: 0.7em;
   position: absolute;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   background: #139ed4;
   border-radius: 50%;
-  top: -10px;
+  top: -25px;
   left: 50px;
   z-index: 10;
 }
 
-.live::after {
+.live h3::after {
   content: "lives code étudiés";
+  z-index: 10;
+  width: 100%;
   position: absolute;
-  top: -10px;
+  top: -25px;
   left: 75px;
   font-size: 0.7em;
 }
 
 .live a {
   cursor: pointer;
+  margin-top: 50px;
   color: white;
   display: block;
   font-size: 0.7em;
-  padding: 5px;
-  width: 50%;
+  padding: 8px;
+  width: 120px;
   height: 45px;
   border-radius: 25px;
   background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));

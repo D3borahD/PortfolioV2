@@ -1,4 +1,4 @@
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 830px) {
   .navbar {
     width: 520px;
   }
@@ -68,8 +68,30 @@
     font-size: 1.5rem;
   }
   #sources {
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #sources h2 {
+    width: 100%;
+  }
+  #sources .separator {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #sources .openclassrooms {
+    width: 50%;
+  }
+  .liste-cours {
+    height: 330px;
+  }
+  .light .navbar ul li a {
+    color: black;
   }
 }
 /*# sourceMappingURL=mobilestyle.css.map */
