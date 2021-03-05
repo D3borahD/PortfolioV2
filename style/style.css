@@ -174,7 +174,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15rem;
+  height: 10rem;
 }
 
 .baniere > h1 {
@@ -185,12 +185,11 @@ header {
 
 .baniere > .photoid img {
   position: absolute;
-  height: 200px;
+  height: 125px;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
           mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
           mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
-  right: -15%;
   bottom: 0;
   z-index: 1;
 }
@@ -281,95 +280,57 @@ section {
   color: #139ed4;
 }
 
-.openclassrooms {
-  height: 120px;
-  width: 120px;
+.bulle {
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   border: 1px solid white;
   position: relative;
   cursor: pointer;
 }
 
-.openclassrooms:hover {
+.bulle:hover {
   background: -webkit-gradient(linear, left top, right top, from(#139ed4), to(#7122e4));
   background: linear-gradient(to right, #139ed4, #7122e4);
   z-index: 10;
 }
 
-.openclassrooms h3 {
-  border-radius: 50%;
-  top: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-}
-
-.openclassrooms h3::before {
-  content: "15";
+.bulle h3 {
+  font-size: 0.7em;
   position: absolute;
-  height: 25px;
-  width: 25px;
-  border: 1px solid red;
-  background: red;
-  border-radius: 50%;
-  top: -30px;
-  right: -5px;
+  top: 30%;
 }
 
-.openclassrooms h3::after {
-  content: "cours suivi";
-  position: absolute;
-  top: -30px;
-  right: -100px;
-}
-
-.openclassrooms ul {
-  position: absolute;
-  width: 500px;
-  height: 200px;
-  top: 100px;
-  visibility: hidden;
-}
-
-.apprentissage {
+.liste-cours {
+  height: 95px;
   overflow: scroll;
-  width: 500px;
-  height: 200px;
-  border-radius: 5px;
 }
 
-.apprentissage ul {
-  visibility: visible;
-}
-
-.apprentissage:hover {
-  background: #1b1b1b;
-}
-
-.openclassrooms ul li {
+.liste-cours li {
   margin-top: 5px;
 }
 
-.openclassrooms ul :nth-child(15) span {
+.liste-cours :nth-child(15) span {
   width: 26%;
 }
 
-.openclassrooms ul :nth-child(14) span {
+.liste-cours :nth-child(14) span {
   width: 80%;
 }
 
-.openclassrooms ul :nth-child(13) span {
+.liste-cours :nth-child(13) span {
   width: 83%;
 }
 
-.openclassrooms ul :nth-child(12) span {
+.liste-cours :nth-child(12) span {
   width: 94%;
 }
 
-.openclassrooms ul :nth-child(11) span {
+.liste-cours :nth-child(11) span {
   width: 53%;
 }
 
-.openclassrooms ul span {
+.liste-cours span {
   background: -webkit-gradient(linear, right top, left top, from(#139ed4), to(#7122e4));
   background: linear-gradient(to left, #139ed4, #7122e4);
   border-radius: 25px;
@@ -379,19 +340,8 @@ section {
   text-align: right;
 }
 
-.live span {
-  height: 15px;
-  width: 15px;
-  background: red;
-}
-
-.live a {
-  color: white;
-  text-decoration: none;
-}
-
-.live a :visited {
-  color: white;
+.apprentissage .liste-cours {
+  height: 500px;
 }
 
 /*CV Bloc

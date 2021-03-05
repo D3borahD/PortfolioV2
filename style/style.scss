@@ -93,7 +93,7 @@ header {
   padding: 0 20px;
 }
 
-// *************Mode mobile/desktop **************
+// *************Light Mode **************
 .checkbox {
   display: none;
 }
@@ -143,7 +143,7 @@ header {
   background: $gradiant2;
   display: flex;
   align-items: center;
-  height: 15rem;
+  height: 10rem;
   > h1 {
     font-size: 3rem;
     margin-left: 15px;
@@ -151,9 +151,8 @@ header {
   }
   > .photoid img {
     position: absolute;
-    height: 200px;
+    height: 125px;
     mask-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
-    right: -15%;
     bottom: 0;
     z-index: 1;
   }
@@ -229,9 +228,9 @@ section {
 }
 
 // SOURCES
-.openclassrooms {
-  height: 120px;
-  width: 120px;
+.bulle {
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   border: 1px solid white;
   position: relative;
@@ -241,65 +240,15 @@ section {
     z-index: 10;
   }
   h3 {
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(50%);
-
-    &::before {
-      content: "15";
-      position: absolute;
-      height: 25px;
-      width: 25px;
-      border: 1px solid red;
-      background: red;
-      border-radius: 50%;
-      top: -30px;
-      right: -5px;
-    }
-    &::after {
-      content: "cours suivi";
-      position: absolute;
-      top: -30px;
-      right: -100px;
-    }
-  }
-  ul {
+    font-size: 0.7em;
     position: absolute;
-    width: 500px;
-    height: 200px;
-    top: 100px;
-    visibility: hidden;
-    // &::before {
-    //   content: "\f338";
-    //   font-family: "Font Awesome 5 Free";
-    //   font-weight: 400;
-    //   color: white;
-    //   position: absolute;
-    //   height: 25px;
-    //   width: 25px;
-    //   background: red;
-    //   border-radius: 50%;
-    //   top: -30px;
-    //   right: -5px;
-    // }
+    top: 30%;
   }
 }
 
-.apprentissage {
+.liste-cours {
+  height: 95px;
   overflow: scroll;
-  width: 500px;
-  height: 200px;
-  border-radius: 5px;
-  ul {
-    visibility: visible;
-  }
-  &:hover {
-    background: $background-color-body;
-  }
-}
-
-.openclassrooms ul {
-  //width: 510px;
   li {
     margin-top: 5px;
   }
@@ -338,20 +287,27 @@ section {
   }
 }
 
-.live {
-  span {
-    height: 15px;
-    width: 15px;
-    background: red;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    :visited {
-      color: white;
-    }
-  }
+.apprentissage .liste-cours {
+  height: 500px;
 }
+
+// live code
+
+// .live {
+//   margin-top: 30px;
+//   span {
+//     height: 15px;
+//     width: 15px;
+//     background: red;
+//   }
+//   a {
+//     color: white;
+//     text-decoration: none;
+//     :visited {
+//       color: white;
+//     }
+//   }
+// }
 
 // #sources li {
 //   width: 100%;
