@@ -122,11 +122,16 @@ header {
   transform: translateX(29px);
 }
 
-// /*CLASS MOBILE MODE */
+/*CLASS Light MODE */
 
-// .mobile {
-//   width: 375px;
-// }
+.light {
+  transition: all 0.3s ease-in-out;
+  background: white;
+  color: #000000;
+  header {
+    background-color: white;
+  }
+}
 
 /* BANNIERE*/
 

@@ -1,12 +1,12 @@
-const mobileMode = document.getElementById('mobile-mode');
+const lightMode = document.getElementById('light-mode');
 const navbar = document.querySelector('.navbar');
 const returnTop = document.getElementById('returnTop');
 const openClassrooms = document.querySelector('.openclassrooms');
 
 
 // Action à paramétrer 
-mobileMode.addEventListener('change', () => {
-    document.body.classList.toggle('mobile');
+lightMode.addEventListener('change', () => {
+    document.body.classList.toggle('light');
 })
 
 
